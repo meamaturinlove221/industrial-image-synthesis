@@ -1,5 +1,7 @@
 # Industrial Image Synthesis
 
+> **Repository status:** this GitHub landing commit currently contains project documentation and publishing instructions. The complete source archive is prepared separately; run `publish.ps1` from the extracted archive to push the source tree to `main`.
+
 A controlled industrial image-generation workbench for matched A/B tasks, Difficult-scene simulation, semantic relations, 2D texture/layout tasks, and an optional 3D relation-task extension.
 
 > **Package versioning:** the main ManiTwin application remains **2.1.2**. The independent 2D texture/layout task module is **3.0.0**. The 3D relation-task extension is an additional research module, not the main application's version number.
