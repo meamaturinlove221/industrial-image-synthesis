@@ -1,15 +1,16 @@
+# Local environments, caches and generated results
+.venv/
 __pycache__/
 *.py[cod]
-.venv/
-runs/
-data/
-output/
-outputs/
-artifacts/
-runtime/
-logs/
+*.egg-info/
+.pytest_cache/
+build/
+dist/
 .env
 .env.*
-configs/*.local.json
-.pytest_cache/
-manifests/backgrounds/DIRECTION_BACKGROUND_MANIFEST_V1.json
+/data/
+/runs/
+/output/
+/outputs/
+/logs/
+/artifacts/

@@ -1,8 +1,0 @@
-{
-  "sct_project": "",
-  "experiment_project": "",
-  "experiment_python": "",
-  "data_root": "data/manitwin_tasks_v2",
-  "experiment_root": "runs/manitwin_tasks_v2",
-  "dataset_config": ""
-}
