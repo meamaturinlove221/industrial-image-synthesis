@@ -23,6 +23,35 @@ This public repository contains the **standalone 2D texture/layout task module**
 
 The broader ManiTwin main workbench (2.1.2), Difficult simulation, Semantic Relation, and the optional Blender-based 3D relation-task extension are not included in this repository.
 
+## Historical project record
+
+The figures below come from an earlier ManiTwin 1.6.3 main-workbench batch and its downstream SCT evaluation. They are useful project-history records, but they are **not benchmarks of the standalone 2D texture/layout 3.0.0 module published in this repository**.
+
+<p align="center"><img src="assets/historical-record.svg" alt="Historical ManiTwin generation record: 217280 images, 108640 A/B pairs, 13580 groups, 4.96 images per second, plus downstream SCT results" width="100%"/></p>
+
+### Earlier generation batch
+
+| Metric | Historical record |
+|---|---:|
+| Representative objects | 485 |
+| Task groups | 13,580 |
+| Matched A/B pairs | 108,640 |
+| RGB images | 217,280 |
+| Generation throughput | About 4.96 images/second with six workers |
+| Integrity check | No missing pairs, invalid images, or duplicate paths recorded |
+
+### Historical downstream SCT evaluation
+
+| Evaluation condition | Reported correctness |
+|---|---:|
+| Nail-plate local recognition | **84.06%** |
+| Nail-plate global recognition | **76.32%** |
+| New random seed | 80.5% |
+| Different theme | 80.7% |
+| Different background | **84.5%** |
+| Subject and background both changed | 81.3% |
+
+The source document does not provide per-condition denominators for these downstream figures. They are retained as historical reported results, not as a reproducible benchmark for the current 2D task module. The earlier batch used the main ManiTwin direction-generation workflow; the current repository contains a separate procedural 2D texture/layout generator.
 ## A/B task examples
 
 The images below are generated examples from the 2D task module. They show paired slots from the same task groups, not model predictions.
