@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="510" viewBox="0 0 1440 510" role="img" aria-labelledby="t d">
+<title id="t">Historical ManiTwin generation and downstream validation record</title>
+<desc id="d">An earlier ManiTwin 1.6.3 batch generated 217280 images in 13580 groups, 108640 matched A/B pairs, at approximately 4.96 images per second with six workers. Historical downstream SCT tests reported 84.06 percent local nail-plate recognition, 76.32 percent global recognition, and 84.5 percent under background variation.</desc>
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f8fbf9"/><stop offset="1" stop-color="#eaf4f0"/></linearGradient>
+ <style>
+ .h{font:700 26px 'Inter','Segoe UI',sans-serif;fill:#16372e}
+ .v{font:800 42px 'Inter','Segoe UI',sans-serif;fill:#1d6048}
+ .k{font:650 17px 'Inter','Segoe UI',sans-serif;fill:#285441}
+ .s{font:500 14px 'Inter','Segoe UI',sans-serif;fill:#5a7569}
+ .n{font:500 13px 'Inter','Segoe UI',sans-serif;fill:#6a8176}
+ </style>
+</defs>
+<rect width="1440" height="510" rx="24" fill="url(#bg)"/>
+<text x="48" y="54" class="h">Historical ManiTwin project record</text>
+<text x="48" y="82" class="n">Earlier 1.6.3 direction-generation pipeline · separate from the standalone 2D texture/layout 3.0.0 source in this repository</text>
+<g transform="translate(48 115)">
+ <rect width="320" height="155" rx="18" fill="#fff" stroke="#8db5a1" stroke-width="2"/>
+ <text x="25" y="64" class="v">217,280</text>
+ <text x="25" y="101" class="k">RGB images generated</text>
+ <text x="25" y="129" class="s">13,580 task groups</text>
+</g>
+<g transform="translate(392 115)">
+ <rect width="320" height="155" rx="18" fill="#fff" stroke="#8db5a1" stroke-width="2"/>
+ <text x="25" y="64" class="v">108,640</text>
+ <text x="25" y="101" class="k">Matched A/B pairs</text>
+ <text x="25" y="129" class="s">485 representative objects</text>
+</g>
+<g transform="translate(736 115)">
+ <rect width="320" height="155" rx="18" fill="#fff" stroke="#8db5a1" stroke-width="2"/>
+ <text x="25" y="64" class="v">4.96</text>
+ <text x="25" y="101" class="k">Images per second</text>
+ <text x="25" y="129" class="s">Six parallel workers</text>
+</g>
+<g transform="translate(1080 115)">
+ <rect width="312" height="155" rx="18" fill="#fff" stroke="#8db5a1" stroke-width="2"/>
+ <text x="25" y="64" class="v">0</text>
+ <text x="25" y="101" class="k">Recorded integrity issues</text>
+ <text x="25" y="129" class="s">No missing pairs, invalid images,</text>
+ <text x="25" y="148" class="s">or duplicate paths in that batch</text>
+</g>
+<text x="48" y="326" class="h" style="font-size:21px">Historical downstream SCT evaluation</text>
+<g transform="translate(48 350)">
+ <rect width="420" height="112" rx="16" fill="#fff" stroke="#a4c2b2"/>
+ <text x="22" y="48" class="v" style="font-size:34px">84.06%</text>
+ <text x="188" y="43" class="k">Local nail-plate</text>
+ <text x="188" y="67" class="s">recognition</text>
+</g>
+<g transform="translate(510 350)">
+ <rect width="420" height="112" rx="16" fill="#fff" stroke="#a4c2b2"/>
+ <text x="22" y="48" class="v" style="font-size:34px">76.32%</text>
+ <text x="188" y="43" class="k">Global nail-plate</text>
+ <text x="188" y="67" class="s">recognition</text>
+</g>
+<g transform="translate(972 350)">
+ <rect width="420" height="112" rx="16" fill="#fff" stroke="#a4c2b2"/>
+ <text x="22" y="48" class="v" style="font-size:34px">84.5%</text>
+ <text x="188" y="43" class="k">Background variation</text>
+ <text x="188" y="67" class="s">reported correctness</text>
+</g>
+<text x="720" y="490" text-anchor="middle" class="n">Historical records only: these figures are not benchmarks of the current standalone 2D generator.</text>
+</svg>
