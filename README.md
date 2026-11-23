@@ -9,7 +9,7 @@
 [![NumPy](https://img.shields.io/badge/Arrays-NumPy-4DABCF?logo=numpy&logoColor=white)](https://numpy.org/)
 [![GitHub stars](https://img.shields.io/github/stars/meamaturinlove221/industrial-image-synthesis?style=flat)](https://github.com/meamaturinlove221/industrial-image-synthesis/stargazers)
 
-[Overview](#overview) · [Generation workflow](#generation-workflow) · [A/B design](#matched-ab-design) · [Quick start](#quick-start) · [CLI](#command-line) · [Output](#dataset-output)
+[Overview](#overview) · [ManiTwin workflow](#manitwin-generation-workflow) · [A/B design](#matched-ab-design) · [Quick start](#quick-start) · [CLI](#command-line) · [Output](#dataset-output)
 
 <img src="assets/generation-pipeline.svg" alt="Industrial Image Synthesis generation pipeline" width="100%"/>
 
@@ -21,44 +21,25 @@ Industrial Image Synthesis creates **matched A/B image groups** for controlled v
 
 This public repository contains the **standalone 2D texture/layout task module** (module release 3.0.0). It uses Tkinter, Pillow, and NumPy, and does not require Blender.
 
-## Generation workflow
+## ManiTwin generation workflow
 
-
-
-The platform is designed to generate, audit, and deliver controlled A/B visual data. Starting from an A-side reference, it creates B-side images by changing a selected task variable within a configured range. Each pair uses the same GLB asset and shares its camera, lighting, and background, keeping the intended visual difference clear.
-
-
+The platform generates, audits, and delivers controlled A/B visual data. Starting from an A-side reference, it creates B-side images by changing a selected task variable within a configured range. Each pair uses the same GLB asset and shares its camera, lighting, and background, keeping the intended visual difference clear.
 
 ### Workpiece selection and preview
 
-
-
 The workpiece browser reads the ManiTwin-100K asset library and lets users select a category and individual model. The live preview displays the A/B pair together with the current azimuth, elevation, subject occupancy, and measured A/B occupancy. Users can adjust viewpoint, subject position, composition, lighting, and background settings, then review a single pair, background variation, a complete training group, or the final batch.
-
-
 
 ### Background and rendering
 
-
-
 Backgrounds support solid colours, image backgrounds, and mixed mode. Users can set the solid-colour ratio, random colours, and image sources such as COCO, with optional variation in colour and exposure, sharpness and noise, compression, lens-edge effects, and composition. A/B images in one training group share the same background source and pair-level settings; background and imaging variation can be sampled between groups.
 
-
-
-The Blender renderer produces transparent A/B foregrounds with the selected pose and perturbation settings. It solves the camera framing jointly for both final poses, keeping both sides inside the image.
-
-
+For 3D workpiece generation, Blender renders transparent A/B foregrounds with the selected pose and perturbation settings. Camera framing is solved jointly for both final poses, keeping both sides inside the image.
 
 ### Training-group variables
 
-
-
 A training group controls horizontal viewpoint, elevation, subject occupancy, composition position, and base lighting. Across groups, the dataset can vary object count, geometry family, asset identity, background, object position and scale, occlusion, and full or partial instances.
 
-
-
 The 2D texture/layout generator in this repository applies the same paired-data principle to texture prototypes and spatial-layout relations.
-
 ## Historical project record
 
 The following figures record an earlier ManiTwin 1.6.3 main-workbench generation batch and its downstream SCT evaluation. The current public source focuses on the standalone 2D texture/layout module, release 3.0.0.
@@ -318,10 +299,9 @@ The generated A/B image groups and manifests provide synthetic inputs for downst
 
 Each experiment defines its own Support/Query sampling protocol, TRAIN/DEV split, labels, and training configuration.
 
-## Release scope
+## Data and release
 
 - This repository contains the 2D texture/layout task generator only.
-- The ManiTwin main workbench 2.1.2, Difficult simulation, Semantic Relation, and the Blender-based 3D relation-task extension are not included.
 - The 2D generator uses procedural shapes, textures, and backgrounds; it does not require real industrial images or statistics derived from them.
 - The broader project package metadata retains version 2.1.2; the standalone 2D task module is identified as 3.0.0.
 - Full generated datasets, industrial images, external asset libraries, and runtime outputs are not included.
