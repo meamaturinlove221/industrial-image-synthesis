@@ -177,15 +177,17 @@ A generated dataset contains:
 ```text
 demo/
 ├── train/
-│   └── <group_id>/
-│       ├── A/
-│       ├── B/
-│       └── group.json
+│   └── texture_relation/
+│       └── <group_id>/
+│           ├── A/
+│           ├── B/
+│           └── group.json
 ├── val/
-│   └── <group_id>/
-│       ├── A/
-│       ├── B/
-│       └── group.json
+│   └── texture_relation/
+│       └── <group_id>/
+│           ├── A/
+│           ├── B/
+│           └── group.json
 ├── train_plan.jsonl
 ├── val_plan.jsonl
 ├── train_groups.jsonl
