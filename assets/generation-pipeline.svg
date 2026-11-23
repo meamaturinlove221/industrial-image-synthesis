@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="430" viewBox="0 0 1440 430" role="img" aria-labelledby="title desc">
+<title id="title">Industrial Image Synthesis pipeline</title>
+<desc id="desc">Procedural shape, texture and layout prototypes feed task planning, matched A/B scene generation, Pillow rendering, pixel-level audit, and dataset manifests.</desc>
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f8fbf9"/><stop offset="1" stop-color="#eaf4f0"/></linearGradient>
+ <marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#647b72"/></marker>
+ <style>.h{font:700 25px 'Inter','Segoe UI',sans-serif;fill:#16372e}.k{font:700 18px 'Inter','Segoe UI',sans-serif;fill:#214a3e}.s{font:500 15px 'Inter','Segoe UI',sans-serif;fill:#506c62}.small{font:500 13px 'Inter','Segoe UI',sans-serif;fill:#5a746b}</style>
+</defs>
+<rect width="1440" height="430" rx="24" fill="url(#bg)"/>
+<text x="52" y="55" class="h">Controlled 2D texture &amp; layout task generation</text>
+<text x="52" y="84" class="s">One paired scene specification controls A/B; only the task-defined factor changes.</text>
+<g transform="translate(50 145)">
+ <rect width="205" height="200" rx="18" fill="#fff" stroke="#85ad9e" stroke-width="2"/>
+ <text x="102" y="34" text-anchor="middle" class="k">Prototypes</text>
+ <rect x="22" y="58" width="70" height="50" rx="8" fill="#eaf3ee" stroke="#9bbcaf"/>
+ <path d="M30 98 L84 68 M30 84 L65 60" stroke="#5b987f" stroke-width="4"/>
+ <rect x="111" y="58" width="70" height="50" rx="8" fill="#f4ecf7" stroke="#b9a1c4"/>
+ <circle cx="129" cy="78" r="6" fill="#a77eb5"/><circle cx="156" cy="92" r="7" fill="#a77eb5"/><circle cx="169" cy="70" r="5" fill="#a77eb5"/>
+ <text x="102" y="136" text-anchor="middle" class="small">Shape · texture</text>
+ <text x="102" y="158" text-anchor="middle" class="small">layout families</text>
+ <text x="102" y="184" text-anchor="middle" class="small">seeded prototypes</text>
+</g>
+<path d="M265 245 H307" stroke="#647b72" stroke-width="3" marker-end="url(#arr)"/>
+<g transform="translate(320 145)">
+ <rect width="205" height="200" rx="18" fill="#fff" stroke="#85ad9e" stroke-width="2"/>
+ <text x="102" y="34" text-anchor="middle" class="k">Task planner</text>
+ <rect x="20" y="58" width="165" height="40" rx="8" fill="#edf5f1" stroke="#b1cbbf"/>
+ <text x="102" y="84" text-anchor="middle" class="small">SceneSpec</text>
+ <rect x="20" y="111" width="165" height="40" rx="8" fill="#edf5f1" stroke="#b1cbbf"/>
+ <text x="102" y="137" text-anchor="middle" class="small">A/B task pair</text>
+ <text x="102" y="180" text-anchor="middle" class="small">fixed seed + split</text>
+</g>
+<path d="M535 245 H577" stroke="#647b72" stroke-width="3" marker-end="url(#arr)"/>
+<g transform="translate(590 145)">
+ <rect width="205" height="200" rx="18" fill="#eaf3ff" stroke="#7fa4cc" stroke-width="2"/>
+ <text x="102" y="34" text-anchor="middle" class="k">Matched pair</text>
+ <rect x="20" y="58" width="72" height="76" rx="8" fill="#fff" stroke="#98b6d4"/>
+ <rect x="113" y="58" width="72" height="76" rx="8" fill="#fff" stroke="#98b6d4"/>
+ <path d="M34 113 L57 74 L82 116 Z" fill="#79a7c8"/><path d="M127 113 L150 74 L175 116 Z" fill="#79a7c8"/>
+ <text x="56" y="154" text-anchor="middle" class="small">A</text><text x="149" y="154" text-anchor="middle" class="small">B</text>
+ <text x="102" y="183" text-anchor="middle" class="small">shared non-target factors</text>
+</g>
+<path d="M805 245 H847" stroke="#647b72" stroke-width="3" marker-end="url(#arr)"/>
+<g transform="translate(860 145)">
+ <rect width="205" height="200" rx="18" fill="#fff7e9" stroke="#d5aa64" stroke-width="2"/>
+ <text x="102" y="34" text-anchor="middle" class="k">Pillow renderer</text>
+ <rect x="25" y="62" width="155" height="72" rx="8" fill="#fff" stroke="#e1c38f"/>
+ <path d="M39 121 L57 82 L74 113 L92 75 L109 121 L128 87 L151 121" stroke="#be9252" stroke-width="5" fill="none"/>
+ <text x="102" y="160" text-anchor="middle" class="small">224 × 224 RGB</text>
+ <text x="102" y="183" text-anchor="middle" class="small">8 pairs / group</text>
+</g>
+<path d="M1075 245 H1117" stroke="#647b72" stroke-width="3" marker-end="url(#arr)"/>
+<g transform="translate(1130 145)">
+ <rect width="255" height="200" rx="18" fill="#e9f7f1" stroke="#69a98d" stroke-width="2"/>
+ <text x="127" y="34" text-anchor="middle" class="k">Audit + dataset</text>
+ <text x="127" y="73" text-anchor="middle" class="s">background equality</text>
+ <text x="127" y="98" text-anchor="middle" class="s">foreground RGB histograms</text>
+ <text x="127" y="123" text-anchor="middle" class="s">visible foreground delta</text>
+ <rect x="22" y="143" width="211" height="35" rx="8" fill="#fff" stroke="#9bcbb6"/>
+ <text x="127" y="166" text-anchor="middle" class="small">images · group.json · manifests</text>
+</g>
+<text x="720" y="390" text-anchor="middle" class="small">Generation and pixel audit are included · model training and real-image evaluation are separate workflows</text>
+</svg>
